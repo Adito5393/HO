@@ -12,7 +12,8 @@ public class HOLauncher {
 	 * main
 	 * @param args
 	 */
-	public static void main(String[] args) {		
+	public static void main(String[] args) {
+		System.out.println("1-start main");
 		File file = new File("update.zip");
 		if (file.exists()) {
 			String dir = file.getAbsolutePath();
@@ -25,7 +26,9 @@ public class HOLauncher {
 				e.printStackTrace();
 			}			
 		}
+		System.out.println("2-before mo.main call");
 		HO.main(args);
+		System.out.println("3-done main call");
 	}
 	
 	private static boolean unzip(ZipFile zipFile, String destDir) {

@@ -556,6 +556,9 @@ task resetDB(){
 }
 
 
+poeditor {
+    //apiKey = POEDITOR_APIKEY
+    projectId = '206221'
 
 poeditorPull {
     outputs.upToDateWhen { false }

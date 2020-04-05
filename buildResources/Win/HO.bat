@@ -7,7 +7,7 @@
 @rem ##########################################################################
 
 @rem Set Debug mode [on/off]
-set DEBUG=off
+set DEBUG=on
 
 
 set DIRNAME=%~dp0
@@ -19,7 +19,7 @@ set APP_HOME=%DIRNAME%
 @rem Set JavaPath, i.e. the path that contains java.exe/javaw.exe
 @rem e.g. set JAVA_PATH=c:\Program Files\Java\jre1.6.0_07
 @rem (leave empty to use the default JRE)
-set JAVA_PATH=
+set JAVA_PATH=C:\Program Files\Java\jdk-11.0.2
 
 @rem Don't change anything below this line, 
 @rem unless you know what you are doing!
@@ -84,5 +84,5 @@ if "%DEBUG%" == "on" (
 	@rem Starting HO in background
 	start "" %JAVA_CMD%  -classpath "%CLASSPATH%" HOLauncher
 )
-
+pause
 exit
