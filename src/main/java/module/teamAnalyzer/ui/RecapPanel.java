@@ -283,7 +283,7 @@ public class RecapPanel extends JPanel {
     }
 
     private void jbInit() {
-        Vector<Object> data = new Vector<Object>();
+        Vector<Vector> data = new Vector<Vector>();
 
         tableModel = new UiRecapTableModel(data, new Vector<String>(Arrays.asList(columns)));
 

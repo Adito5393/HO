@@ -44,7 +44,7 @@ public class TacticPanel extends JPanel {
     }
 
     public void reload(List<TacticReport> list) {
-        tableModel = new BaseTableModel(new Vector<Object>(),
+        tableModel = new BaseTableModel(new Vector<Vector>(),
                                         new Vector<String>(Arrays.asList(new String[]{
                                                                      "COL_A", "COL_B", "COL_C"
                                                                  })));
@@ -92,7 +92,7 @@ public class TacticPanel extends JPanel {
     }
 
     private void jbInit() {
-        Vector<Object> data = new Vector<Object>();
+        Vector<Vector> data = new Vector<Vector>();
 
         tableModel = new BaseTableModel(data,
                                         new Vector<String>(Arrays.asList(new String[]{

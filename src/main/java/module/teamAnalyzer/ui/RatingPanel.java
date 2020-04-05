@@ -41,7 +41,7 @@ public class RatingPanel extends JPanel {
 
     //~ Methods ------------------------------------------------------------------------------------
     public void reload(TeamLineup lineup) {
-        tableModel = new UiRatingTableModel(new Vector<Object>(), new Vector<String>(Arrays.asList(columns)));
+        tableModel = new UiRatingTableModel(new Vector<Vector>(), new Vector<String>(Arrays.asList(columns)));
         table.setModel(tableModel);
 
         if ((lineup == null) || (!ModuleConfig.instance().getBoolean(SystemManager.ISLINEUP))) {
@@ -111,7 +111,7 @@ public class RatingPanel extends JPanel {
     }
 
     private void jbInit() {
-        Vector<Object> data = new Vector<Object>();
+        Vector<Vector> data = new Vector<Vector>();
 
         tableModel = new UiRatingTableModel(data, new Vector<String>(Arrays.asList(columns)));
         table = new JTable(tableModel);

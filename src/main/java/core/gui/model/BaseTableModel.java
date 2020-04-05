@@ -29,9 +29,14 @@ public class BaseTableModel extends DefaultTableModel {
 	 * @param columnNames
 	 *            Vector of column names
 	 */
-	public BaseTableModel(Vector<Object> data, Vector<?> columnNames) {
+//	public BaseTableModel(Vector<Object> data, Vector<?> columnNames) {
+//		super(data, columnNames);
+//	}
+
+	public BaseTableModel(Vector<? extends Vector> data, Vector<?> columnNames) {
 		super(data, columnNames);
 	}
+
 
 	/**
 	 * Method that returns if the cell if editable, false by default
